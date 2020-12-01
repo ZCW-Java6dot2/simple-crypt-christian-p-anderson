@@ -75,7 +75,7 @@ public class ROT13  {
     public void decryptSonnet(File file) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
-            BufferedWriter writer = new BufferedWriter(new FileWriter("sonnet18.enc"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("sonnet18.dec"));
             String line;
             while ((line = reader.readLine()) != null) {
                 writer.write(encryptAndDecrypt(line) + "\n");
