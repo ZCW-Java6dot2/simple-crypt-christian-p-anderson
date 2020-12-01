@@ -2,7 +2,7 @@
 
 public class CaesarCipher extends ROT13{
 
-    private Integer shift = 0;
+    private Integer shift;
 
     public String encrypt(String text, Integer shift) throws UnsupportedOperationException { // char 'A' = 65, char 'a' = 97
         StringBuilder sb = new StringBuilder();
